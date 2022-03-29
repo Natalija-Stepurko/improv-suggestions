@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ImprovSuggestions</title>
+    <title>Random Suggestion Geneator for Improv Scenes</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <link rel="icon" type="image/png" href="/assets/logo.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -13,6 +15,8 @@
   </head>
 
   <body>
+    <%= render 'layouts/navbar' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
