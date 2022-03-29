@@ -17,6 +17,11 @@
   width: 100px;
 }
 
-.navbar-cusi .navbar-brand {
+.link {
   text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: grey;
 }
