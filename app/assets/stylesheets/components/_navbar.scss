@@ -1,12 +1,22 @@
-.navbar-lewagon {
+.navbar-cusi {
   justify-content: space-between;
-  background: white;
+  background: $white;
+  height: 100px;
+  padding: 5px 20px 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-cusi .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-cusi .navbar-brand img {
+  width: 100px;
+}
+
+.navbar-cusi .navbar-brand {
+  text-decoration: none;
 }
