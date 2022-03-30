@@ -1,34 +1,45 @@
 .banner {
-  background-image: url("banner.jpg");
-  background-size: cover;
-  height: 60vh;
-  width: 100vw;
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 50px;
 
-  .typing-header h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation:
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+  a {
+    font-size: 50px;
+    text-decoration: none;
+    color: #1E1E1E;
+    padding-top: 25vh;
+    display: inline-block;
+    position: relative;
+    text-align: center;
   }
 
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  a:after {
+    content: '';
+    height: 50px;
+    width: 2px;
+    background: #1E1E1E;
+    opacity: 0;
+    display: inline-block;
+    animation: blink 1s linear infinite alternate;
   }
 
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
+}
 
+.banner::before {
+  content: "";
+  background-image: url("banner.jpg");
+  background-size: cover;
+  height: 70vh;
+  width: 100vw;
+  position: absolute;
+  opacity: 0.5;
 }

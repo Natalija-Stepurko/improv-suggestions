@@ -21,7 +21,8 @@ TxtType.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
-  var delta = 200 - Math.random() * 100;
+  // var delta = 200 - Math.random() * 100;
+  var delta = 200;
 
   if (this.isDeleting) { delta /= 2; }
 
@@ -51,6 +52,6 @@ window.onload = function() {
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #1E1E1E}";
   document.body.appendChild(css);
 };
