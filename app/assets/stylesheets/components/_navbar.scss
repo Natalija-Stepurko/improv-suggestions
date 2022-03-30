@@ -1,7 +1,7 @@
 .navbar-cusi {
   justify-content: space-between;
   background: $white;
-  height: 100px;
+  height: 12vh;
   padding: 5px 20px 5px 20px;
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,8 @@
 }
 
 .navbar-cusi .navbar-brand img {
-  width: 100px;
+  // width: 100px;
+  height: 8vh;
 }
 
 .link {

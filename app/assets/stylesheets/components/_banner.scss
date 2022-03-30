@@ -2,7 +2,7 @@
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  // align-items: flex-start;
 
   a {
     font-size: 50px;
@@ -38,6 +38,7 @@
   content: "";
   background-image: url("banner.jpg");
   background-size: cover;
+  background-position: center;
   height: 70vh;
   width: 100vw;
   position: absolute;
