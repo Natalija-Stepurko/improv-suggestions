@@ -1,26 +1,46 @@
 .banner {
-  background-image: url("banner.jpg");
-  background-size: cover;
-  height: 60vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-top: 50px;
 
-  .typing-header {
-    color:black;
-    // width: 100%;
-    // margin:auto;
-    animation: typing 3s steps(50), blink .7s step-end infinite alternate-reverse;
-    // white-space: nowrap;
-    // overflow: hidden;
-    // border-right: 3px solid;
-    h2{
-      font-size: 3vw;
-    }
+  display: flex;
+  justify-content: center;
+  // align-items: flex-start;
+
+  a {
+    font-size: 50px;
+    text-decoration: none;
+    color: #1E1E1E;
+    padding-top: 25vh;
+    display: inline-block;
+    position: relative;
+    text-align: center;
   }
 
+  a:after {
+    content: '';
+    height: 50px;
+    width: 2px;
+    background: #1E1E1E;
+    opacity: 0;
+    display: inline-block;
+    animation: blink 1s linear infinite alternate;
+  }
 
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
 
+.banner::before {
+  content: "";
+  background-image: url("banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100vw;
+  position: absolute;
+  opacity: 0.5;
 }
